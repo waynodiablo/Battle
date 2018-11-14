@@ -1,3 +1,16 @@
-Player1: <%= session[:player1] %> vs Player2: <%= session[:player2]%>
+<html>
 
-<%= session[:player2]%>'s hp: <%= @player2_hp %>
+  <body>
+    <p>
+      Player1: <%= $player1.name %> vs Player2: <%= $player2.name%>
+    </p>
+    <p>
+      <%= $player2.name %>'s hp: <%= $player2.hp %>
+    </p>
+    <form action="attack" method="post">
+      <input type="submit" value="Attack">
+    </form>
+
+  </body>
+
+</html>
